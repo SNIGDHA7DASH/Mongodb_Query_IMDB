@@ -1,0 +1,215 @@
+
+
+
+[
+    {
+        "name":"Housefull 4",
+        "language":["english","hindi"],
+        "genre":["action","adventure","comedy"],
+        "media":[
+            {
+                "type":"image",
+                "url":"https://www.imdb.com/title/tt7721946?ref_=vp_vi_tt_p"
+            },
+            {
+                "type":"video",
+                "url":"https://www.imdb.com/video/vi2743582489?playlistId=tt7721946&ref_=tt_pr_ov_vi"
+            }
+            
+        ],
+        "actor":[
+            {
+                "name":"Akhaya Kumar",
+                "role":"hero",
+                "skill":["Actor","Dancer"],
+                "name_in_movie":"Bala"
+            },
+            {
+                "name":"Kriti",
+                "role":"heroine",
+                "skill":["Actor","Dancer"],
+                "name_in_movie":"Madhu"
+            }
+            
+        ],
+        "review":[
+            {
+                "username":"Snigdha",
+                "review_type":"Good"
+            },
+            {
+                "username":"Smiki",
+                "review_type":"Verygood"
+            },
+            {
+                "username":"Siddhi",
+                "review_type":"Excellent"
+            }
+        ]
+    },
+    {
+        
+        "name":"3 Idiots",
+        "language":["english","hindi"],
+        "genre":["comedy","Drama"],
+        "media":[
+            {
+                "type":"image",
+                "url":"https://www.imdb.com/title/tt1187043/?ref_=vp_back"
+            },
+            {
+                "type":"video",
+                "url":"https://www.imdb.com/video/vi3086596889?playlistId=tt1187043&ref_=tt_ov_vi"
+            }
+            
+        ],
+        "actor":[
+            {
+                "name":[ "Aamir Khan", "Madhavan", " Sharman Joshi"],
+                "role":"hero",
+                "skill":["Actor"],
+                "name_in_movie":["Ranchho","Faharan" ,"Raju"]
+           },
+            {
+                "name":"Karina Kapoor",
+                "role":"heroine",
+                "skill":"Actor",
+                "name_in_movie":"Pia"
+            }
+            
+        ],
+        "review":[
+            {
+                "username":"Snigdha",
+                "review_type":"Good"
+            },
+            {
+                "username":"Sweety",
+                "review_type":"Excellent"
+            }
+        ]
+    },
+    {
+        "name":"Ajab prem ki Gajab Kahani",
+        "language":["english","hindi"],
+        "genre":["action","Romance","Comedy"],
+        "media":[
+            {
+                "type":"image",
+                "url":"https://www.imdb.com/title/tt1252596/"
+            },
+            {
+                "type":"video",
+                "url":"https://www.imdb.com/video/vi3085613849?playlistId=tt1252596&ref_=tt_ov_vi"
+            }
+            
+        ],
+        "actor":[
+            {
+                "name":"Ranbir Kapoor",
+                "role":"hero",
+                "skill":["Actor","Dancer"],
+                "name_in_movie":"Prem Chopra"
+            },
+            {
+                "name":"Katrina Kaif",
+                "role":"Heroine",
+                "skill":["Actor","Dancer"],
+                "name_in_movie":"Zenny"
+            }
+            
+        ],
+        "review":[
+            {
+                "username":"Prativa",
+                "review_type":"Average"
+            },
+            {
+                "username":"Annie",
+                "review_type":"Mind Blowing"
+            }
+        ]
+    },
+    {
+        "name":"God Father",
+        "language":["english","hindi"],
+        "genre":["Crime","Drama"],
+        "media":[
+            {
+                "type":"image",
+                "url":"https://www.imdb.com/title/tt0068646/mediaviewer/rm746868224/"
+            },
+            {
+                "type":"video",
+                "url":"https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+            }
+            
+        ],
+        "actor":[
+            {
+                "name":"Marlon Brando",
+                "role":"hero",
+                "skill":"Actor",
+                "name_in_movie":"james cann"
+            }
+        ],
+        "review":[
+            {
+                "username":"Prativa",
+                "review_type":"Average"
+            },
+            {
+                "username":"Annie",
+                "review_type":"Mind Blowing"
+            }
+        ]
+    },
+    {
+        "name":"Bahubali The Beginning",
+        "language":["Tamil","hindi"],
+        "genre":["Action","Drama"],
+        "media":[
+            {
+                "type":"image",
+                "url":"https://www.imdb.com/title/tt2631186/"
+            },
+            {
+                "type":"video",
+                "url":"https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+            }
+            
+        ],
+        "actor":[
+            {
+                "name":"Pravas",
+                "role":"hero",
+                "skill":"Actor",
+                "name_in_movie":["Shivudu","Amarendra Bahuballi","Mahendra Bahubaali"]
+            },
+            {
+                "name":"Rana Daggubaati",
+                "role":"villian",
+                "skill":"Actor",
+                "name_in_movie":"Ballaldev"
+            },
+            {
+                "name":"Ram Krishna",
+                "role":"heroine",
+                "skill":"Actor",
+                "name_in_movie":["Shivgamini"]
+            }
+        ],
+        "review":[
+            {
+                "username":"Sweet",
+                "review_type":"Excellent"
+            },
+            {
+                "username":"Annie",
+                "review_type":"Mind Blowing"
+            }
+        ]
+    }
+]
+    
+

@@ -1,0 +1,744 @@
+ show dbs;                                                                          
+Employee-database  0.000GB
+admin              0.000GB
+config             0.000GB
+imdb               0.000GB
+local              0.000GB
+task-manager       0.000GB
+task-manager-api   0.000GB
+test               0.000GB
+twit               0.000GB
+unit-test          0.000GB
+unit-test-task     0.000GB
+> show collections;
+moviedata
+> 
+
+ db.moviedata.insertMany(
+...     [
+...     {
+...         "name":"Housefull 4",
+...         "language":["english","hindi"],
+...         "genre":["action","adventure","comedy"],
+...         "media":[
+...             {
+...                 "type":"image",
+...                 "url":"https://www.imdb.com/title/tt7721946?ref_=vp_vi_tt_p"
+...             },
+...             {
+...                 "type":"video",
+...                 "url":"https://www.imdb.com/video/vi2743582489?playlistId=tt7721946&ref_=tt_pr_ov_vi"
+...             }
+...
+...         ],
+...         "actor":[
+...             {
+...                 "name":"Akhaya Kumar",
+...                 "role":"hero",
+...                 "skill":["Actor","Dancer"],
+...                 "name_in_movie":"Bala"
+...             },
+...             {
+...                 "name":"Kriti",
+...                 "role":"heroine",
+...                 "skill":["Actor","Dancer"],
+...                 "name_in_movie":"Madhu"
+...             }
+...
+...         ],
+...         "review":[
+...             {
+...                 "username":"Snigdha",
+...                 "review_type":"Good"
+...             },
+...             {
+...                 "username":"Smiki",
+...                 "review_type":"Verygood"
+...             },
+...             {
+...                 "username":"Siddhi",
+...                 "review_type":"Excellent"
+...             }
+...         ]
+...     },
+...     {
+...
+...         "name":"3 Idiots",
+...         "language":["english","hindi"],
+...         "genre":["comedy","Drama"],
+...         "media":[
+...             {
+...                 "type":"image",
+...                 "url":"https://www.imdb.com/title/tt1187043/?ref_=vp_back"
+...             },
+...             {
+...                 "type":"video",
+...                 "url":"https://www.imdb.com/video/vi3086596889?playlistId=tt1187043&ref_=tt_ov_vi"
+...             }
+...
+...         ],
+...         "actor":[
+...             {
+...                 "name":[ "Aamir Khan", "Madhavan", " Sharman Joshi"],
+...                 "role":"hero",
+...                 "skill":["Actor"],
+...                 "name_in_movie":["Ranchho","Faharan" ,"Raju"]
+...            },
+...             {
+...                 "name":"Karina Kapoor",
+...                 "role":"heroine",
+...                 "skill":"Actor",
+...                 "name_in_movie":"Pia"
+...             }
+...
+...         ],
+...         "review":[
+...             {
+...                 "username":"Snigdha",
+...                 "review_type":"Good"
+...             },
+...             {
+...                 "username":"Sweety",
+...                 "review_type":"Excellent"
+...             }
+...         ]
+...     },
+...     {
+...         "name":"Ajab prem ki Gajab Kahani",
+...         "language":["english","hindi"],
+...         "genre":["action","Romance","Comedy"],
+...         "media":[
+...             {
+...                 "type":"image",
+...                 "url":"https://www.imdb.com/title/tt1252596/"
+...             },
+...             {
+...                 "type":"video",
+...                 "url":"https://www.imdb.com/video/vi3085613849?playlistId=tt1252596&ref_=tt_ov_vi"
+...             }
+...
+...         ],
+...         "actor":[
+...             {
+...                 "name":"Ranbir Kapoor",
+...                 "role":"hero",
+...                 "skill":["Actor","Dancer"],
+...                 "name_in_movie":"Prem Chopra"
+...             },
+...             {
+...                 "name":"Katrina Kaif",
+...                 "role":"Heroine",
+...                 "skill":["Actor","Dancer"],
+...                 "name_in_movie":"Zenny"
+...             }
+...
+...         ],
+...         "review":[
+...             {
+...                 "username":"Prativa",
+...                 "review_type":"Average"
+...             },
+...             {
+...                 "username":"Annie",
+...                 "review_type":"Mind Blowing"
+...             }
+...         ]
+...     },
+...     {
+...         "name":"God Father",
+...         "language":["english","hindi"],
+...         "genre":["Crime","Drama"],
+...         "media":[
+...             {
+...                 "type":"image",
+...                 "url":"https://www.imdb.com/title/tt0068646/mediaviewer/rm746868224/"
+...             },
+...             {
+...                 "type":"video",
+...                 "url":"https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+...             }
+...
+...         ],
+...         "actor":[
+...             {
+...                 "name":"Marlon Brando",
+...                 "role":"hero",
+...                 "skill":"Actor",
+...                 "name_in_movie":"james cann"
+...             },
+...         ],
+...         "review":[
+...             {
+...                 "username":"Prativa",
+...                 "review_type":"Average"
+...             },
+...             {
+...                 "username":"Annie",
+...                 "review_type":"Mind Blowing"
+...             }
+...         ]
+...     },
+...     {
+...         "name":"Bahubali The Beginning",
+...         "language":["Tamil","hindi"],
+...         "genre":["Action","Drama"],
+...         "media":[
+...             {
+...                 "type":"image",
+...                 "url":"https://www.imdb.com/title/tt2631186/"
+...             },
+...             {
+...                 "type":"video",
+...                 "url":"https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+...             }
+...
+...         ],
+...         "actor":[
+...             {
+...                 "name":"Pravas",
+...                 "role":"hero",
+...                 "skill":"Actor",
+...                 "name_in_movie":["Shivudu","Amarendra Bahuballi","Mahendra Bahubaali"]
+...             },
+...             {
+...                 "name":"Rana Daggubaati",
+...                 "role":"villian",
+...                 "skill":"Actor",
+...                 "name_in_movie":"Ballaldev"
+...             },
+...             {
+...                 "name":"Ram Krishna",
+...                 "role":"heroine",
+...                 "skill":"Actor",
+...                 "name_in_movie":["Shivgamini"]
+...             },
+...         ],
+...         "review":[
+...             {
+...                 "username":"Sweet",
+...                 "review_type":"Excellent"
+...             },
+...             {
+...                 "username":"Annie",
+...                 "review_type":"Mind Blowing"
+...             }
+...         ]
+...     }
+... ]
+... );
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("60d9d8d6379addb3a587f55b"),
+                ObjectId("60d9d8d6379addb3a587f55c"),
+                ObjectId("60d9d8d6379addb3a587f55d"),
+                ObjectId("60d9d8d6379addb3a587f55e"),
+                ObjectId("60d9d8d6379addb3a587f55f")
+        ]
+}
+>
+
+ db.moviedata.find(id:1).pretty();
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:20
+> db.moviedata.find({},{"id":1}).pretty();      
+{ "_id" : ObjectId("60d9c00b379addb3a587f556") }
+{ "_id" : ObjectId("60d9c00b379addb3a587f557") }
+{ "_id" : ObjectId("60d9c00b379addb3a587f558") }
+{ "_id" : ObjectId("60d9c00b379addb3a587f559") }
+{ "_id" : ObjectId("60d9c00b379addb3a587f55a") }
+{ "_id" : ObjectId("60d9d8d6379addb3a587f55b") }
+{ "_id" : ObjectId("60d9d8d6379addb3a587f55c") }
+{ "_id" : ObjectId("60d9d8d6379addb3a587f55d") }
+{ "_id" : ObjectId("60d9d8d6379addb3a587f55e") }
+{ "_id" : ObjectId("60d9d8d6379addb3a587f55f") }
+>//List all media of a particular film
+
+ db.moviedata.find({},{"media":1}).pretty();
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f556"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt7721946?ref_=vp_vi_tt_p"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi2743582489?playlistId=tt7721946&ref_=tt_pr_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f557"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt1187043/?ref_=vp_back"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi3086596889?playlistId=tt1187043&ref_=tt_ov_vi"   
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f558"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt1252596/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi3085613849?playlistId=tt1252596&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f559"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt0068646/mediaviewer/rm746868224/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f55a"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2631186/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55b"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt7721946?ref_=vp_vi_tt_p"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi2743582489?playlistId=tt7721946&ref_=tt_pr_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55c"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt1187043/?ref_=vp_back"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi3086596889?playlistId=tt1187043&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55d"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt1252596/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi3085613849?playlistId=tt1252596&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55e"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt0068646/mediaviewer/rm746868224/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55f"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2631186/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ]
+}
+> //List all media and reviews of a particular film
+
+ db.moviedata.find({},{"media":1},{"review":1}).pretty();
+
+db.moviedata.find({},{"media":1},{"review":1}).pretty();
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f556"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt7721946?ref_=vp_vi_tt_p"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi2743582489?playlistId=tt7721946&ref_=tt_pr_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f557"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt1187043/?ref_=vp_back"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi3086596889?playlistId=tt1187043&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f558"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt1252596/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi3085613849?playlistId=tt1252596&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f559"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt0068646/mediaviewer/rm746868224/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f55a"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2631186/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55b"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt7721946?ref_=vp_vi_tt_p"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi2743582489?playlistId=tt7721946&ref_=tt_pr_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55c"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt1187043/?ref_=vp_back"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi3086596889?playlistId=tt1187043&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55d"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt1252596/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi3085613849?playlistId=tt1252596&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55e"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt0068646/mediaviewer/rm746868224/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55f"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2631186/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ]
+}
+> //List all cast along with roles and artist of a particular film
+ db.moviedata.find({"actor.name":"Pravas"}).pretty();
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f55a"),
+        "name" : "Bahubali The Beginning",
+        "language" : [
+                "Tamil",
+                "hindi"
+        ],
+        "genre" : [
+                "Action",
+                "Drama"
+        ],
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2631186/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ],
+        "actor" : [
+                {
+                        "name" : "Pravas",
+                        "role" : "hero",
+                        "skill" : "Actor",
+                        "name_in_movie" : [
+                                "Shivudu",
+                                "Amarendra Bahuballi",
+                                "Mahendra Bahubaali"
+                        ]
+                },
+                {
+                        "name" : "Rana Daggubaati",
+                        "role" : "villian",
+                        "skill" : "Actor",
+                        "name_in_movie" : "Ballaldev"
+                },
+                {
+                        "name" : "Ram Krishna",
+                        "role" : "heroine",
+                        "skill" : "Actor",
+                        "name_in_movie" : [
+                                "Shivgamini"
+                        ]
+                }
+        ],
+        "review" : [
+                {
+                        "username" : "Sweet",
+                        "review_type" : "Excellent"
+                },
+                {
+                        "username" : "Annie",
+                        "review_type" : "Mind Blowing"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55f"),
+        "name" : "Bahubali The Beginning",
+        "language" : [
+                "Tamil",
+                "hindi"
+        ],
+        "genre" : [
+                "Action",
+                "Drama"
+        ],
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2631186/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi1348706585?playlistId=tt0068646&ref_=tt_ov_vi"
+                }
+        ],
+        "actor" : [
+                {
+                        "name" : "Pravas",
+                        "role" : "hero",
+                        "skill" : "Actor",
+                        "name_in_movie" : [
+                                "Shivudu",
+                                "Amarendra Bahuballi",
+                                "Mahendra Bahubaali"
+                        ]
+                },
+                {
+                        "name" : "Rana Daggubaati",
+                        "role" : "villian",
+                        "skill" : "Actor",
+                        "name_in_movie" : "Ballaldev"
+                },
+                {
+                        "name" : "Ram Krishna",
+                        "role" : "heroine",
+                        "skill" : "Actor",
+                        "name_in_movie" : [
+                                "Shivgamini"
+                        ]
+                }
+        ],
+        "review" : [
+                {
+                        "username" : "Sweet",
+                        "review_type" : "Excellent"
+                },
+                {
+                        "username" : "Annie",
+                        "review_type" : "Mind Blowing"
+                }
+        ]
+}
+> 
+//List all the reviews given by particular user
+db.moviedata.find({"review.username":"Snigdha"},{"review.review_type.$":1}).pretty();
+
+db.moviedata.find({"review.username":"Snigdha"},{"review.review_type.$":1}).pretty();
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f556"),
+        "review" : [
+                {
+                        "review_type" : "Good"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f557"),
+        "review" : [
+                {
+                        "review_type" : "Good"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55b"),
+        "review" : [
+                {
+                        "review_type" : "Good"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55c"),
+        "review" : [
+                {
+                        "review_type" : "Good"
+                }
+        ]
+}
+>//List all the sk ills of a particular Artist
+ 
+
+ 
+db.moviedata.find({"actor.name":"Pravas"},{"actor.skill.$":1}).pretty();       
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f55a"),
+        "actor" : [
+                {
+                        "skill" : "Actor"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55f"),
+        "actor" : [
+                {
+                        "skill" : "Actor"
+                }
+        ]
+}
+>                     
+
+//List all the roles performed by a particular artist
+
+> db.moviedata.find({"actor.name":"Pravas"},{"actor.role.$":1}).pretty();   
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f55a"),
+        "actor" : [
+                {
+                        "role" : "hero"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55f"),
+        "actor" : [
+                {
+                        "role" : "hero"
+                }
+        ]
+}
+> db.moviedata.find({"actor.name":"Ranbir Kapoor"},{"actor.role.$":1}).pretty();
+{
+        "_id" : ObjectId("60d9c00b379addb3a587f558"),
+        "actor" : [
+                {
+                        "role" : "hero"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9d8d6379addb3a587f55d"),
+        "actor" : [
+                {
+                        "role" : "hero"
+                }
+        ]
+}
+>
+
+
+
+
+
+
+
